@@ -1,3 +1,15 @@
 body {
     background-color: rgb(95, 201, 228);
 }
+
+header, footer {
+    text-align: center;
+    border: 1px solid;
+    width: 80vw;
+}
+
+main {
+    background-color: white;
+    border: 1px solid;
+    width: 80vw;
+}
