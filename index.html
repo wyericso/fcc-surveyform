@@ -8,35 +8,103 @@
         <header>
             <h1>Survey Form</h1>
         </header>
-        <main>
+        <form>
             <div class="subtitle">Let us know how we can improve freeCodeCamp</div>
-            <form>
-                <label for="name">* Name:</label>
-                <input type="text" id="name">
-                <label for="email">* Email:</label>
-                <input type="email" id="email">
-                <label for="age">* Age:</label>
-                <input type="number">
-                <label for="role">Which option best describes your current role?</label>
-                <select id="role">
+            <div class="q_and_a">
+                <label class="questions" for="name"><abbr>* </abbr> Name:</label>
+                <input class="answers" type="text" id="name" name="name" required>
+                <label class="questions" for="email"><abbr>* </abbr> Email:</label>
+                <input class="answers" type="email" id="email" name="email" required>
+                <label class="questions" for="age"><abbr>* </abbr> Age:</label>
+                <input class="answers" type="number" id="age" min="1" max="120" name="age" required>
+                <label class="questions" for="role">Which option best describes your current role?</label>
+                <select id="role" name="role">
                     <option>Student</option>
                     <option>Full Time Job</option>
                     <option>Full Time Learner</option>
                     <option>Prefer not to say</option>
                     <option>Other</option>
                 </select>
-                <label for="recommend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-                <input type="radio" name="recommend">Definitely
-                <input type="radio" name="recommend">Maybe
-                <label for="likemost">What do you like most in FCC:</label>
-                <div>A2</div>
-                <label for="toimprove">Things that should be improved in the future<br>(Check all that apply):</label>
-                <div>A2</div>
-                <label for="comment">Any Comments or Suggestions?</label>
-                <div>A2</div>
-            </form>
-            <div class="submit">Submit</div>
-        </main>
+                <div class="questions"><abbr>* </abbr> How likely is that you would recommend freeCodeCamp to a friend?</div>
+                <fieldset class="answers">
+                    <legend>Recommend</legend>
+                    <ul>
+                        <li>
+                            <label for="definitely">Definitely</label>
+                            <input type="radio" id="definitely" name="recommend" value="definitely">
+                        </li>
+                        <li>
+                            <label for="maybe">Maybe</label>
+                            <input type="radio" id="maybe" name="recommend" value="maybe">
+                        </li>
+                        <li>
+                            <label for="notsure">Not sure</label>
+                            <input type="radio" id="notsure" name="recommend" value="notsure">
+                        </li>
+                    </ul>
+                </fieldset>
+                <label class="questions" for="likemost">What do you like most in FCC:</label>
+                <select class="answers" id="likemost" name="likemost">
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+                <div class="questions">Things that should be improved in the future<br>(Check all that apply):</div>
+                <fieldset class="answers">
+                    <legend>Improve</legend>
+                    <ul>
+                        <li>
+                            <label for="frontend_projects">Front-end Projects</label>
+                            <input type="checkbox" id="frontend_projects" name="frontend_projects">
+                        </li>
+                        <li>
+                            <label for="backend_projects">Back-end Projects</label>
+                            <input type="checkbox" id="backend_projects" name="backend_projects">
+                        </li>
+                        <li>
+                            <label for="data_visualization">Data Visualization</label>
+                            <input type="checkbox" id="data_visualization" name="data_visualization">
+                        </li>
+                        <li>
+                            <label for="challenges">Challenges</label>
+                            <input type="checkbox" id="challenges" name="challenges">
+                        </li>
+                        <li>
+                            <label for="open_source_community">Open Source Community</label>
+                            <input type="checkbox" id="open_source_community" name="open_source_community">
+                        </li>
+                        <li>
+                            <label for="gitter_help_rooms">Gitter help rooms</label>
+                            <input type="checkbox" id="gitter_help_rooms" name="gitter_help_rooms">
+                        </li>
+                        <li>
+                            <label for="videos">Videos</label>
+                            <input type="checkbox" id="videos" name="videos">
+                        </li>
+                        <li>
+                            <label for="city_meetups">City Meetups</label>
+                            <input type="checkbox" id="city_meetups" name="city_meetups">
+                        </li>
+                        <li>
+                            <label for="wiki">Wiki</label>
+                            <input type="checkbox" id="wiki" name="wiki">
+                        </li>
+                        <li>
+                            <label for="forum">Forum</label>
+                            <input type="checkbox" id="forum" name="forum">
+                        </li>
+                        <li>
+                            <label for="additional_courses">Additional Courses</label>
+                            <input type="checkbox" id="additional_courses" name="additional_courses">
+                        </li>
+                    </ul>
+                </fieldset>
+                <label class="questions" for="comments">Any Comments or Suggestions?</label>
+                <textarea class="answers" id="comments"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
         <footer>
             &copy; Eric So 2018. All Rights Reserved.
         </footer>    
