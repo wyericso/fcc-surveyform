@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Survey Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
     </head>
     <div class="container">
@@ -26,23 +27,16 @@
                     <option>Other</option>
                 </select>
                 <div class="questions"><abbr>* </abbr> How likely is that you would recommend freeCodeCamp to a friend?</div>
-                <fieldset class="answers">
-                    <legend>Recommend</legend>
-                    <ul>
-                        <li>
-                            <label for="definitely">Definitely</label>
-                            <input type="radio" id="definitely" name="recommend" value="definitely">
-                        </li>
-                        <li>
-                            <label for="maybe">Maybe</label>
-                            <input type="radio" id="maybe" name="recommend" value="maybe">
-                        </li>
-                        <li>
-                            <label for="notsure">Not sure</label>
-                            <input type="radio" id="notsure" name="recommend" value="notsure">
-                        </li>
-                    </ul>
-                </fieldset>
+                <div class="answers">
+                    <input type="radio" id="definitely" name="recommend" value="definitely">
+                    <label for="definitely">Definitely</label>
+                    <br>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label>
+                    <br>
+                    <input type="radio" id="notsure" name="recommend" value="notsure">
+                    <label for="notsure">Not sure</label>
+                </div>
                 <label class="questions" for="likemost">What do you like most in FCC:</label>
                 <select class="answers" id="likemost" name="likemost">
                     <option>Challenges</option>
@@ -51,55 +45,41 @@
                     <option>Open Source</option>
                 </select>
                 <div class="questions">Things that should be improved in the future<br>(Check all that apply):</div>
-                <fieldset class="answers">
-                    <legend>Improve</legend>
-                    <ul>
-                        <li>
-                            <label for="frontend_projects">Front-end Projects</label>
-                            <input type="checkbox" id="frontend_projects" name="frontend_projects" value="frontend_projects">
-                        </li>
-                        <li>
-                            <label for="backend_projects">Back-end Projects</label>
-                            <input type="checkbox" id="backend_projects" name="backend_projects" value="backend_projects">
-                        </li>
-                        <li>
-                            <label for="data_visualization">Data Visualization</label>
-                            <input type="checkbox" id="data_visualization" name="data_visualization" value="data_visualization">
-                        </li>
-                        <li>
-                            <label for="challenges">Challenges</label>
-                            <input type="checkbox" id="challenges" name="challenges" value="challenges">
-                        </li>
-                        <li>
-                            <label for="open_source_community">Open Source Community</label>
-                            <input type="checkbox" id="open_source_community" name="open_source_community" value="open_source_community">
-                        </li>
-                        <li>
-                            <label for="gitter_help_rooms">Gitter help rooms</label>
-                            <input type="checkbox" id="gitter_help_rooms" name="gitter_help_rooms" value="gitter_help_rooms">
-                        </li>
-                        <li>
-                            <label for="videos">Videos</label>
-                            <input type="checkbox" id="videos" name="videos" value="videos">
-                        </li>
-                        <li>
-                            <label for="city_meetups">City Meetups</label>
-                            <input type="checkbox" id="city_meetups" name="city_meetups" value="city_meetups">
-                        </li>
-                        <li>
-                            <label for="wiki">Wiki</label>
-                            <input type="checkbox" id="wiki" name="wiki" value="wiki">
-                        </li>
-                        <li>
-                            <label for="forum">Forum</label>
-                            <input type="checkbox" id="forum" name="forum" value="forum">
-                        </li>
-                        <li>
-                            <label for="additional_courses">Additional Courses</label>
-                            <input type="checkbox" id="additional_courses" name="additional_courses" value="additional_courses">
-                        </li>
-                    </ul>
-                </fieldset>
+                <div class="answers">
+                    <input type="checkbox" id="frontend_projects" name="frontend_projects" value="frontend_projects">
+                    <label for="frontend_projects">Front-end Projects</label>
+                    <br>
+                    <input type="checkbox" id="backend_projects" name="backend_projects" value="backend_projects">
+                    <label for="backend_projects">Back-end Projects</label>
+                    <br>
+                    <input type="checkbox" id="data_visualization" name="data_visualization" value="data_visualization">
+                    <label for="data_visualization">Data Visualization</label>
+                    <br>
+                    <input type="checkbox" id="challenges" name="challenges" value="challenges">
+                    <label for="challenges">Challenges</label>
+                    <br>
+                    <input type="checkbox" id="open_source_community" name="open_source_community" value="open_source_community">
+                    <label for="open_source_community">Open Source Community</label>
+                    <br>
+                    <input type="checkbox" id="gitter_help_rooms" name="gitter_help_rooms" value="gitter_help_rooms">
+                    <label for="gitter_help_rooms">Gitter help rooms</label>
+                    <br>
+                    <input type="checkbox" id="videos" name="videos" value="videos">
+                    <label for="videos">Videos</label>
+                    <br>
+                    <input type="checkbox" id="city_meetups" name="city_meetups" value="city_meetups">
+                    <label for="city_meetups">City Meetups</label>
+                    <br>
+                    <input type="checkbox" id="wiki" name="wiki" value="wiki">
+                    <label for="wiki">Wiki</label>
+                    <br>
+                    <input type="checkbox" id="forum" name="forum" value="forum">
+                    <label for="forum">Forum</label>
+                    <br>
+                    <input type="checkbox" id="additional_courses" name="additional_courses" value="additional_courses">
+                    <label for="additional_courses">Additional Courses</label>
+                    <br>
+                </div>
                 <label class="questions" for="comments">Any Comments or Suggestions?</label>
                 <textarea class="answers" id="comments"></textarea>
             </div>
