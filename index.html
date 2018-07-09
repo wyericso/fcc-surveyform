@@ -6,19 +6,19 @@
     </head>
     <div class="container">
         <header>
-            <h1>Survey Form</h1>
+            <h1 id="title">Survey Form</h1>
         </header>
-        <form>
-            <div class="subtitle">Let us know how we can improve freeCodeCamp</div>
+        <form id="survey-form">
+            <div class="subtitle" id="description">Let us know how we can improve freeCodeCamp</div>
             <div class="q_and_a">
-                <label class="questions" for="name"><abbr>* </abbr> Name:</label>
-                <input class="answers" type="text" id="name" name="name" required>
-                <label class="questions" for="email"><abbr>* </abbr> Email:</label>
-                <input class="answers" type="email" id="email" name="email" required>
-                <label class="questions" for="age"><abbr>* </abbr> Age:</label>
-                <input class="answers" type="number" id="age" min="1" max="120" name="age" required>
+                <label class="questions" for="name" id="name-label"><abbr>* </abbr> Name:</label>
+                <input class="answers" type="text" id="name" name="name" placeholder="Full name" required>
+                <label class="questions" for="email" id="email-label"><abbr>* </abbr> Email:</label>
+                <input class="answers" type="email" id="email" name="email" placeholder="Email address" required>
+                <label class="questions" for="number" id="number-label"><abbr>* </abbr> Age:</label>
+                <input class="answers" type="number" id="number" min="1" max="120" name="age" placeholder="Age" required>
                 <label class="questions" for="role">Which option best describes your current role?</label>
-                <select id="role" name="role">
+                <select id="dropdown" name="role">
                     <option>Student</option>
                     <option>Full Time Job</option>
                     <option>Full Time Learner</option>
@@ -56,54 +56,56 @@
                     <ul>
                         <li>
                             <label for="frontend_projects">Front-end Projects</label>
-                            <input type="checkbox" id="frontend_projects" name="frontend_projects">
+                            <input type="checkbox" id="frontend_projects" name="frontend_projects" value="frontend_projects">
                         </li>
                         <li>
                             <label for="backend_projects">Back-end Projects</label>
-                            <input type="checkbox" id="backend_projects" name="backend_projects">
+                            <input type="checkbox" id="backend_projects" name="backend_projects" value="backend_projects">
                         </li>
                         <li>
                             <label for="data_visualization">Data Visualization</label>
-                            <input type="checkbox" id="data_visualization" name="data_visualization">
+                            <input type="checkbox" id="data_visualization" name="data_visualization" value="data_visualization">
                         </li>
                         <li>
                             <label for="challenges">Challenges</label>
-                            <input type="checkbox" id="challenges" name="challenges">
+                            <input type="checkbox" id="challenges" name="challenges" value="challenges">
                         </li>
                         <li>
                             <label for="open_source_community">Open Source Community</label>
-                            <input type="checkbox" id="open_source_community" name="open_source_community">
+                            <input type="checkbox" id="open_source_community" name="open_source_community" value="open_source_community">
                         </li>
                         <li>
                             <label for="gitter_help_rooms">Gitter help rooms</label>
-                            <input type="checkbox" id="gitter_help_rooms" name="gitter_help_rooms">
+                            <input type="checkbox" id="gitter_help_rooms" name="gitter_help_rooms" value="gitter_help_rooms">
                         </li>
                         <li>
                             <label for="videos">Videos</label>
-                            <input type="checkbox" id="videos" name="videos">
+                            <input type="checkbox" id="videos" name="videos" value="videos">
                         </li>
                         <li>
                             <label for="city_meetups">City Meetups</label>
-                            <input type="checkbox" id="city_meetups" name="city_meetups">
+                            <input type="checkbox" id="city_meetups" name="city_meetups" value="city_meetups">
                         </li>
                         <li>
                             <label for="wiki">Wiki</label>
-                            <input type="checkbox" id="wiki" name="wiki">
+                            <input type="checkbox" id="wiki" name="wiki" value="wiki">
                         </li>
                         <li>
                             <label for="forum">Forum</label>
-                            <input type="checkbox" id="forum" name="forum">
+                            <input type="checkbox" id="forum" name="forum" value="forum">
                         </li>
                         <li>
                             <label for="additional_courses">Additional Courses</label>
-                            <input type="checkbox" id="additional_courses" name="additional_courses">
+                            <input type="checkbox" id="additional_courses" name="additional_courses" value="additional_courses">
                         </li>
                     </ul>
                 </fieldset>
                 <label class="questions" for="comments">Any Comments or Suggestions?</label>
                 <textarea class="answers" id="comments"></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </form>
         <footer>
             &copy; Eric So 2018. All Rights Reserved.

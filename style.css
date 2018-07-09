@@ -31,7 +31,7 @@ form {
     grid-area: form;
 }
 
-.subtitle {
+.subtitle, .submit {
     text-align: center;
 }
 
