@@ -10,7 +10,9 @@
             <h1 id="title">Survey Form</h1>
         </header>
         <form id="survey-form">
-            <div class="subtitle" id="description">Let us know how we can improve freeCodeCamp</div>
+            <div class="subtitle">
+                <p id="description">Let us know how we can improve freeCodeCamp</p>
+            </div>
             <div class="q_and_a">
                 <label class="questions" for="name" id="name-label"><abbr>* </abbr> Name:</label>
                 <input class="answers" type="text" id="name" name="name" placeholder="Full name" required>
@@ -20,13 +22,14 @@
                 <input class="answers" type="number" id="number" min="1" max="120" name="age" placeholder="Age" required>
                 <label class="questions" for="role">Which option best describes your current role?</label>
                 <select id="dropdown" name="role">
+                    <option disabled selected>Select an option</option>
                     <option>Student</option>
                     <option>Full Time Job</option>
                     <option>Full Time Learner</option>
                     <option>Prefer not to say</option>
                     <option>Other</option>
                 </select>
-                <div class="questions"><abbr>* </abbr> How likely is that you would recommend freeCodeCamp to a friend?</div>
+                <div class="questions">How likely is that you would recommend freeCodeCamp to a friend?</div>
                 <div class="answers">
                     <input type="radio" id="definitely" name="recommend" value="definitely">
                     <label for="definitely">Definitely</label>
@@ -39,6 +42,7 @@
                 </div>
                 <label class="questions" for="likemost">What do you like most in FCC:</label>
                 <select class="answers" id="likemost" name="likemost">
+                    <option disabled selected>Select an option</option>
                     <option>Challenges</option>
                     <option>Projects</option>
                     <option>Community</option>
@@ -91,4 +95,5 @@
             &copy; Eric So 2018. All Rights Reserved.
         </footer>    
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

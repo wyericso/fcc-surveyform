@@ -43,10 +43,15 @@ form {
 }
 
 .subtitle, .submit {
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    margin: 0;
 }
 
 .q_and_a {
@@ -59,4 +64,18 @@ form {
 
 .questions {
     text-align: right;
+}
+
+@media (max-width: 480px) {
+    .q_and_a {
+        grid-template-columns: 100fr;
+    }
+    
+    .q_and_a > *:nth-child(even) {
+        margin-bottom: 20px;
+    }
+
+    .questions {
+        text-align: left;
+    }
 }
